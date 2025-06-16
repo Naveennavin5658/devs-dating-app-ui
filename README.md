@@ -19,4 +19,6 @@ If you are developing a production application, we recommend using TypeScript wi
 # DevTinder
 - Created a Vit + React project
 - Remove uynnecessary code and create a namaste app
-- 
+- Install tailwind css
+- Install daisy ui
+- Add a nav bar component to App.jsx
