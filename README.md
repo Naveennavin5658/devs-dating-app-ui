@@ -13,6 +13,15 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 
+# UI Outline
+
+Body
+    NavBar
+    Route=/ => Feed
+    Route=/login => Login Page
+    Route=/connections => Connections component
+    Route=/profile => Profile
+
 
 
 
@@ -22,3 +31,8 @@ If you are developing a production application, we recommend using TypeScript wi
 - Install tailwind css
 - Install daisy ui
 - Add a nav bar component to App.jsx
+- Create a separate NavBar file and separate the component
+- Install react router dom
+- Create broswer router > Routes > Route Children
+- Create Outlet in body component
+- Create a common footer
