@@ -45,3 +45,7 @@ Body
 - Add redux dev tools extension to chrome
 - Login and check the updated profile photo of the user and add a welcome banner message
 - Refactor base url to group constants and group all components to a common components folder
+- You should not be able to access to other routes. 
+- If token is not present, redirect user to login page
+- Logout
+- Profile
