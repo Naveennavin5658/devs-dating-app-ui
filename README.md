@@ -11,21 +11,17 @@ Currently, two official plugins are available:
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
-
-
 # UI Outline
 
 Body
-    NavBar
-    Route=/ => Feed
-    Route=/login => Login Page
-    Route=/connections => Connections component
-    Route=/profile => Profile
-
-
-
+NavBar
+Route=/ => Feed
+Route=/login => Login Page
+Route=/connections => Connections component
+Route=/profile => Profile
 
 # DevTinder
+
 - Created a Vit + React project
 - Remove uynnecessary code and create a namaste app
 - Install tailwind css
@@ -37,7 +33,7 @@ Body
 - Create Outlet in body component
 - Create a common footer
 - Crate a login page
-- Install axios 
+- Install axios
 - Handling CORS - Install cors npm package. In backend => add middleware with configurations: origin, credentials
 - Whenever you are making any api call, pass axios {withCredentials:true}
 - Install redux tool-kit + react/redux package
@@ -45,7 +41,8 @@ Body
 - Add redux dev tools extension to chrome
 - Login and check the updated profile photo of the user and add a welcome banner message
 - Refactor base url to group constants and group all components to a common components folder
-- You should not be able to access to other routes. 
+- You should not be able to access to other routes.
 - If token is not present, redirect user to login page
 - Logout feature (Redirect to login page)
 - Profile
+- Build User card on the feed (Fetch the feed data and add the feed in the store)
