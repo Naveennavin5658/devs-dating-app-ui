@@ -1,5 +1,5 @@
 import axios from "axios";
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { BASE_URL } from "../utils/constants";
@@ -7,6 +7,7 @@ import { removeUser } from "../utils/userSlice";
 import { removeFeed } from "../utils/feedSlice";
 
 const NavBar = () => {
+  
   const handleLogout = async () => {
     try {
       await axios.post(BASE_URL + "/logout", {}, { withCredentials: true });
@@ -33,8 +34,8 @@ const NavBar = () => {
         {user && (
           <div className="dropdown dropdown-end">
             <div className="toast toast-top toast-end">
-              <div className="alert alert-info mx-20 flex">
-                <span>Welcome {user?.firstName + " " + user?.lastName}</span>
+              <div className="alert  mx-20 flex">
+                <span>Welcome, {user?.firstName + " " + user?.lastName}</span>
               </div>
             </div>
             <div

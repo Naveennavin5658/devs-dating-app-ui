@@ -22,6 +22,7 @@ const Login = () => {
         { withCredentials: true }
       );
       dispatch(addUser(res?.data?.data));
+
       return navigate("/");
     } catch (err) {
       setError(err?.response?.data?.message);
@@ -36,7 +37,7 @@ const Login = () => {
             <h2 className="card-title justify-center">Login</h2>
             <div>
               <fieldset className="fieldset">
-                <legend className="fieldset-legend">Email ID: {emailId}</legend>
+                <legend className="fieldset-legend">Email ID:</legend>
                 <input
                   type="text"
                   className="input"
@@ -51,9 +52,7 @@ const Login = () => {
 
             <div>
               <fieldset className="fieldset">
-                <legend className="fieldset-legend">
-                  Password: {password}
-                </legend>
+                <legend className="fieldset-legend">Password:</legend>
                 <input
                   type="text"
                   className="input"
