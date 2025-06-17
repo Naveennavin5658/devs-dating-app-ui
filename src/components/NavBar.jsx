@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const user = useSelector((store) => store.user);
+  console.log(user);
   return (
     <div className="navbar bg-base-300 shadow-sm">
       <div className="flex-1">
@@ -18,10 +19,7 @@ const NavBar = () => {
           <div className="dropdown dropdown-end">
             <div className="toast toast-top toast-end">
               <div className="alert alert-info mx-20 flex">
-                <span>
-                  Welcome{" "}
-                  {user?.message.firstName + " " + user?.message.lastName}
-                </span>
+                <span>Welcome {user?.firstName + " " + user?.lastName}</span>
               </div>
             </div>
             <div
@@ -30,7 +28,7 @@ const NavBar = () => {
               className="btn btn-ghost btn-circle avatar mx-10"
             >
               <div className="w-10 rounded-full">
-                <img alt="User Avatar" src={user?.message.photoUrl} />
+                <img alt="User Avatar" src={user.photoUrl} />
               </div>
             </div>
 
