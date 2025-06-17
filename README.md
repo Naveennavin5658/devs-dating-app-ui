@@ -40,3 +40,8 @@ Body
 - Install axios 
 - Handling CORS - Install cors npm package. In backend => add middleware with configurations: origin, credentials
 - Whenever you are making any api call, pass axios {withCredentials:true}
+- Install redux tool-kit + react/redux package
+- configureStore => add a Provider to app.jsx => createSlice & export it => add reducer to store
+- Add redux dev tools extension to chrome
+- Login and check the updated profile photo of the user and add a welcome banner message
+- Refactor base url to group constants and group all components to a common components folder
