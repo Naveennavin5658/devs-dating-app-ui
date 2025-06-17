@@ -47,5 +47,5 @@ Body
 - Refactor base url to group constants and group all components to a common components folder
 - You should not be able to access to other routes. 
 - If token is not present, redirect user to login page
-- Logout
+- Logout feature (Redirect to login page)
 - Profile

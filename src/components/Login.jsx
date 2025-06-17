@@ -8,6 +8,7 @@ import { BASE_URL } from "../utils/constants";
 const Login = () => {
   const [emailId, setEmailId] = useState("naveennavin5659@gmail.com");
   const [password, setPassword] = useState("Shambho@5659");
+  const [error, setError] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const handleLoginClick = async () => {
@@ -23,6 +24,7 @@ const Login = () => {
       dispatch(addUser(res?.data?.data));
       return navigate("/");
     } catch (err) {
+      setError(err?.response?.data?.message);
       console.error(`Login API call failed due to error ${err}`);
     }
   };
@@ -63,6 +65,7 @@ const Login = () => {
                 />
               </fieldset>
             </div>
+            <p className="text-red-500">{error}</p>
             <div className="card-actions justify-center">
               <button className="btn btn-primary" onClick={handleLoginClick}>
                 Login
